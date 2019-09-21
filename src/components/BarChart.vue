@@ -5,12 +5,11 @@
 </template>
 
 <script>
-    import Chart from 'chart.js'
     export default {
         name: "BarChart",
         mounted() {
             const ctx = this.$refs.barChart;
-            const barChart = new Chart(ctx, {
+            const barChart = new this.$_Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
